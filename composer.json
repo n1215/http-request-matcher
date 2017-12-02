@@ -1,0 +1,36 @@
+{
+    "name": "n1215/http-request-matcher",
+    "description": "matcher for PSR-7 HTTP server request",
+    "keywords": [
+        "psr-7",
+        "http-request",
+        "matcher"
+    ],
+    "type": "library",
+    "homepage": "https://github.com/n1215/http-request-matcher",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "n1215",
+            "email": "knakae1215@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "psr/http-message": "^1.0.0"
+    },
+    "require-dev": {
+        "zendframework/zend-diactoros": "^1.4",
+        "phpunit/phpunit": "^6.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "N1215\\Http\\RequestMatcher\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "N1215\\Http\\RequestMatcher\\": "tests"
+        }
+    }
+}
