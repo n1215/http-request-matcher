@@ -1,4 +1,4 @@
-# http-router
+# http-request-matcher
 
 Matcher for PSR-7 HTTP request.
 
