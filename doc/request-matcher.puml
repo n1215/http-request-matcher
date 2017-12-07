@@ -1,0 +1,37 @@
+@startuml
+
+package N1215\Http\RequestMatcher {
+
+    interface RequestMatchResultInterface {
+        + isSuccess(): bool
+        + getParams(): array
+    }
+    note bottom of RequestMatchResultInterface: Holds whether matched or not, and matched params.
+
+    interface RequestMatcherInterface {
+        + match(RequestInterface $request): RequestMatchResultInterface
+    }
+    note bottom of RequestMatcherInterface: matcher for PSR-7 request
+
+
+    Psr\Http\Message.RequestInterface --> RequestMatcherInterface: input
+    RequestMatcherInterface --> RequestMatchResultInterface: output
+
+    interface ServerRequestMatcherInterface {
+        + match(ServerRequestInterface $request): RequestMatchResultInterface
+    }
+    note bottom of ServerRequestMatcherInterface: matcher for PSR-7 server request
+    Psr\Http\Message.ServerRequestInterface --> ServerRequestMatcherInterface: input
+    ServerRequestMatcherInterface --> RequestMatchResultInterface: output
+
+}
+
+namespace Psr\Http\Message {
+    interface RequestInterface
+    note top of RequestInterface: PSR-7 server request
+
+    interface ServerRequestInterface
+    note top of ServerRequestInterface: PSR-7 server request
+}
+
+@enduml
