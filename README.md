@@ -36,7 +36,7 @@ if ($result->isSuccess()) {
 
 ## Implementation examples
 * see [test](tests/RequestMatcherTest.php)
-* [n1215/hakudo : MethodAndPathMatcher](https://github.com/n1215/hakudo/blob/v0.2.0/src/RequestMatcher/MethodAndPathMatcher.php)
+* [n1215/hakudo : MethodAndPathMatcher](https://github.com/n1215/hakudo/blob/v0.3.0/src/RequestMatcher/MethodAndPathMatcher.php)
 
 ## Class diagram
 
