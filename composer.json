@@ -1,6 +1,6 @@
 {
     "name": "n1215/http-request-matcher",
-    "description": "matcher for PSR-7 HTTP server request",
+    "description": "Matcher interface for PSR-7 HTTP request, like preg_match() for string.",
     "keywords": [
         "psr-7",
         "http-request",
