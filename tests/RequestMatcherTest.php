@@ -5,8 +5,8 @@ namespace N1215\Http\RequestMatcher;
 
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\RequestInterface;
-use Zend\Diactoros\ServerRequest;
-use Zend\Diactoros\Uri;
+use Laminas\Diactoros\ServerRequest;
+use Laminas\Diactoros\Uri;
 
 class RequestMatcherTest extends TestCase
 {
